@@ -1,0 +1,32 @@
+# config.yaml
+
+# Example configurations for the script.
+# Add more key-value pairs as needed based on what the script requires.
+
+logging:
+  level: "INFO"
+
+database:
+  time_series_production_prices: "data/time_series_production_prices.sqlite"
+  time_series_weather: "data/time_series_weather.sqlite"
+
+api:
+  endpoint: "https://api.example.com"
+  token: "your-api-token"
+
+# Other configurations
+feature_toggle:
+  enable_feature_x: true
+  enable_feature_y: false
+
+
+query:
+  solar: "SELECT utc_timestamp, DE_solar_profile FROM time_series_60min_singleindex;" 
+ 
+paths:
+  input_data: "data/"
+  output_data: "output/"
+
+forward_curves:
+  base_ger_fwc: "data/germ_fwc(fwc_ger_base_data).csv"
+  peak_ger_fwc: "data/germ_fwc(fwc_ger_peak_data).csv"

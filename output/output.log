@@ -1,0 +1,12 @@
+2024-10-10 10:16:06,921 - root - INFO - Logging is set to INFO level for console and DEBUG level for the log file
+2024-10-10 10:16:06,921 - root - INFO - Starting the script
+2024-10-10 10:16:06,921 - root - DEBUG - Using configuration file: config.yaml
+2024-10-10 10:16:06,923 - root - DEBUG - Configuration loaded: {'logging': {'level': 'INFO'}, 'database': {'time_series_production_prices': 'data/time_series_production_prices.sqlite', 'time_series_weather': 'data/time_series_weather.sqlite'}, 'api': {'endpoint': 'https://api.example.com', 'token': 'your-api-token'}, 'feature_toggle': {'enable_feature_x': True, 'enable_feature_y': False}, 'query': {'solar': 'SELECT utc_timestamp, DE_solar_profile FROM time_series_60min_singleindex;'}, 'paths': {'input_data': 'data/', 'output_data': 'output/'}, 'forward_curves': {'base_ger_fwc': 'data/germ_fwc(fwc_ger_base_data).csv', 'peak_ger_fwc': 'data/germ_fwc(fwc_ger_peak_data).csv'}}
+2024-10-10 10:16:06,923 - root - INFO - Running the main logic...
+2024-10-10 10:16:06,923 - root - INFO - load_and_plot_fwc
+2024-10-10 10:16:06,923 - root - INFO - Entering load_and_plot_fwc
+2024-10-10 10:16:07,409 - root - INFO - Exiting load_and_plot_fwc
+2024-10-10 10:16:07,409 - root - INFO - load_and_plot_solar_data
+2024-10-10 10:16:07,410 - root - INFO - Entering load_and_plot_solar_data
+2024-10-10 10:16:07,795 - root - INFO - Entering load_and_plot_solar_data
+2024-10-10 10:16:11,399 - root - INFO - Script finished successfully
